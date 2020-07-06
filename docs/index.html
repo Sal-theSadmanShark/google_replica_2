@@ -1,87 +1,208 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<!-- 
-Hello Fellow Coder :D
-This is my first project for 'the odin project'
-This replica took me about 2 days to built , this is the second version i completely ditched the first one which was horrible :'(
-But i learbed alot from the process , i looked at other submission for help and it really worked
-this page is not perfect but it's alot better than my older one . Shoutout to my peers because their submissions really helped
-
-I'm marking the sections for details  . You can copy anything from this code.
-I hope this code helps you in any way :D
-
-by , Salim Sadman
- -->
-
 <head> 
-    <title>Google replica</title>  
-
-     <!--meta tags for viewport and author name -->
+    <title>Google resulsts replica</title>  
     <meta name="author" content="Salim Sadman">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<!-- fontawesome link for icons -->
-	<script src="https://kit.fontawesome.com/05a9990651.js" crossorigin="anonymous"></script>
-
-	<!-- live reload
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>  -->
     
-	<link rel="stylesheet" type="text/css" href="gstyle.css">
+    <script src="https://kit.fontawesome.com/05a9990651.js" crossorigin="anonymous"></script>
+
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&display=swap" rel="stylesheet">
 </head>
 
 <body>  
-	
+    
     <nav id="navbar">
-        <div class="nl">
-            <a href="#" class="navlink">About</a>
-            <a href="#" class="navlink">Store</a>	
-        </div>
-        <div class="nr">
-            <a href="#" class="navlink">Gmail</a>
-            <a href="#" class="navlink">Images</a>
-            <a href="#" class="navlink"><i class="fas fa-th"></i></a>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" id="image">
+
+<div class="nr">
+            <a href="#" class="navlink"><i class="fas fa-th" style="color: gray;"></i></a>
             <a href="#" class="navlink sign">Sign in</a>
         </div>
+
+        <div id="search-bar">
+             <input type="text" name="search" id="input" value="build this webpage" >
+         <a href="#"> <i class="fas fa-microphone search-icon vr"></i></a>
+         <i class="fas fa-search search-icon "></i> 
+        </div>
+
+        
     </nav>
 
-    
- <!-- center division start -->
+<div id="nav-tab">
 
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" id="image">
+<span style="border-bottom:3px groove blue;"><i class="fas fa-search search-icon"></i> <a href="#" style="color: dodgerblue;">All</a></span>
+<span class="ntb" ><i class="fas fa-video navi" ></i><a href="#">Videos</a></span>
+<span class="ntb" ><i class="fas fa-newspaper navi" ></i><a href="#">News</a></span>
+<span class="ntb" ><i class="fas fa-map-marker-alt navi" ></i><a href="#">Maps</a></span>
+<span class="ntb" ><i class="fas fa-images navi" ></i><a href="#">Images</a></span>
+<span class="ntb" ><i class="fas fa-list navi" ></i><a href="#">More</a></span>
+<span class="ntb" style="visibility: hidden;" >loremispum</span>
+<span class="ntb" ><a href="#">Settings</a></span>
+<span class="ntb" ><a href="#">Tools</a></span>
+
+</div>
+ <p>About 102,000,000 results (0.52 seconds) </p>    
+    <main>
+        
+<div class="main-container">  <p>victor-lf.github.io › google-search-results <i class="fas fa-sort-down dropi" ></i> 
+</p>
+<a href="#"><h3>
+build this webpage - GitHub Pages</h3></a>
+<p>build this webpage. https://benjdelt.github.io/google-results/. With zero coding experience, artist building 180 webpages in 180 days ...
+</p> </div>
+
+<div class="main-container">  <p>christine-27.github.io › google-homepage <i class="fas fa-sort-down dropi" ></i> 
+</p>
+<a href=""><h3>build this webpage - GitHub Pages</h3></a>
+<p>With zero coding experience, artist building 180 webpages in 180 days. hhttps://arstechnica.com/.../with-zero-coding-experience-artist-building-180-webpages-.</p> </div>
+
+<div class="main-container"> 
+<h3>Videos</h3>
+<div id="vidtab">
+<div class="vid-container">
+    <iframe src="https://www.youtube.com/embed/l3mUE6qj2Qg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="270px" height="200px;"></iframe>
+    <p>How to Make a Website in 10 mins - Simple & Easy</p><br>
+    <pre>Website Learners
+YouTube - Jan 3, 2018</pre><br>
+</div>
+<div class="vid-container">
+    <iframe src="https://www.youtube.com/embed/YWA-xbsJrVg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="270px" height="200px;"></iframe>
+    <p>How To Build a Website Without Code | Everyone Can Build a ...
+</p><br>
+    <pre>Roberto Blake
+YouTube - Nov 8, 2016</pre><br>
+</div>
+<div class="vid-container">
+    <iframe width="270px" height="200px" src="https://www.youtube.com/embed/EtxBvU21J28" frameborder="0" allow="accelerometer; autoplay;" allowfullscreen></iframe>
+    <p>Welcome to the web! (alien)</p><br>
+    <pre>Khan Academy Computing
+Khan Academy - Mar 29, 2020</pre><br>
+</div>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/EtxBvU21J28" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+</div>
+
+</div>
+
+<div class="main-container" id="simtab">
+<h3>People Also ask</h3><i class="fas fa-sort-down dropi" ></i>
+    <p>How can I create my own webpage?</p><i class="fas fa-sort-down dropi" ></i>
+  <p>How can I create my own website on Google?</p><i class="fas fa-sort-down dropi" ></i>
+ <p>How do you create a website for free?</p><i class="fas fa-sort-down dropi" ></i>
+   <p style="border: none; padding-bottom: none;">How can I create a website and earn money?</p>     
+</div>
+
+<div class="main-container">  <p>www.websitebuilderexpert.com › building-websites <i class="fas fa-sort-down dropi" ></i> 
+</p>
+<a href="#"><h3>How to Build a Website 2020 | The Complete Beginner's Guide</h3></a>
+<p>Jun 5, 2020 - How to Build a Website: the Step-by-Step Guide to Easy Setup. We'll look at how to make a website with both a website builder and WordPress, ...</p> </div>
+
+<div class="main-container">  <p>
+arstechnica.com › information-technology › 2013/07 <i class="fas fa-sort-down dropi" ></i> </p>
+<a href="#"><h3>With zero coding experience, artist building 180 webpages in ...</h3></a>
+<p>Jul 26, 2013 - One of Jennifer Dewalt's creations, this webpage lets visitors create paintings in ... Build a different website every day for 180 consecutive days.</p> </div>
+
+<div class="main-container">  <p>
+websitesetup.org <i class="fas fa-sort-down dropi" ></i> </p>
+<a href="#"><h3>How to Create a Website: Step-by-Step Guide for Beginners ...</h3></a>
+<p>Mar 11, 2020 - Learn how to make a website and set it up. This site contains different tutorials on how to build a website using WordPress, Joomla, Drupal ...</p> </div>
+
+<div class="main-container">  <p>
+www.pcmag.com › ... › Web Hosting <i class="fas fa-sort-down dropi" ></i> </p>
+<a href="#"><h3>How to Create a Website | PCMag</h3></a>
+<p>If you need to quickly build a simple website, starting with a blogging service is a great way to go. The major player in the blog game is WordPress, a content ...</p> </div>
+
+<div class="main-container">  <p>
+www.google.com › business › website-builder <i class="fas fa-sort-down dropi" ></i> </p>
+<a href="#"><h3>Free Website Builder For Your Business - Google My Business</h3></a>
+<p>Let Google build your first website for free. We'll help you create a beautiful website to impress and engage new customers – and establish your business online.
+</p> </div>
+
+<div class="main-container">  <p>
+Website.comwww.website.com <i class="fas fa-sort-down dropi" ></i> </p>
+<a href="#"><h3>Create Your Website for Free | Free Site Builder | </h3></a>
+<p>Domain names, web hosting, website templates, and ecommerce solutions ... Build a credible brand identity with your custom domain name - included for free ...
+</p> </div>
+
+<div class="main-container">  <p>
+www.buildthis.io › make-a-website <i class="fas fa-sort-down dropi" ></i> </p>
+<a href="#"><h3>How to Build A Website: A-to-Z Beginner Guide - BuildThis.io</h3></a>
+<p>Apr 21, 2020 - In this article, I will show you the essential steps in creating a website. Register a domain name; Signup for a web hosting; Design your ...</p> </div>
+
+
+<div id="searchbox">
+    <h3>People Also search for</h3><i class="fas fa-sort-down dropi" ></i><br>
+</div><br>
+
+<div id="relsearch">
+    <h3>Searches related to build this webpage</h3>
+<i class="fas fa-search search-icon"></i><p>create professional website</p><br>
+<i class="fas fa-search search-icon"></i><p>how to build a website from scratch</p><br>
+<i class="fas fa-search search-icon"></i><p>how to create a website free of cost</p><br>
+<i class="fas fa-search search-icon"></i><p>build a website free</p><br>
+<i class="fas fa-search search-icon"></i><p>creating a website for your business</p><br>
+<i class="fas fa-search search-icon"></i><p>how to create a website pdf</p><br>
+<i class="fas fa-search search-icon"></i><p>create website google</p><br>
+<i class="fas fa-search search-icon"></i><p>Page navigation</p>
+</div>
+
+    </main>
     
-        <div id="search-bar">
-        <i class="fas fa-search" class="search-icon"></i>
-        <input type="text" name="search" id="input">
-         <a href="#"> <i class="fas fa-microphone" class="search-icon"></i></a>	
-        </div>
+
+<div id="botnav">
+
     
-         <div id="luck">   <a href="https://www.google.com/" class="lucky1">Google Search</a>
-            <a href="#" class="lucky2"  id="luck-test" onclick="myfunc()" title="Click Me !" >I'm Feelig Lucky </a> </div>            
-            <!--center division end  -->
-    
-    
+<span class="goog-logo" style="color: dodgerblue">G</span>
+<span class="goog-logo" style="color: tomato">o</span>
+<span class="goog-logo"     style="color: yellow" >o</span>
+<span class="goog-logo" style="color: yellow" >o</span>
+<span class="goog-logo" style="color: yellow" >o</span>
+<span class="goog-logo" style="color: yellow" >o</span>
+<span class="goog-logo" style="color: yellow" >o</span>
+<span class="goog-logo" style="color: yellow" >o</span>
+<span class="goog-logo" style="color: yellow" >o</span>
+<span class="goog-logo" style="color: yellow" >o</span>
+<span class="goog-logo" style="color: yellow" >o</span>
+<span class="goog-logo" style="color: dodgerblue">g</span>
+<span class="goog-logo" style="color: lightgreen" >l</span>
+<span class="goog-logo" style="color: tomato">e</span><br>
+
+<span class="goog-num" >&#160; </span>
+<span class="goog-num" style="color: gray" >1</span>
+<span class="goog-num" >2</span>
+<span class="goog-num" >3</span>
+<span class="goog-num" >4</span>
+<span class="goog-num" >5</span>
+<span class="goog-num" >6</span>
+<span class="goog-num" >7</span>
+<span class="goog-num" >8</span>
+<span class="goog-num" >9</span>
+<span class="goog-num" >10</span>
+<span class="goog-num" >&#160; </span>
+<span class="goog-num" >&#160; </span>
+<span class="goog-num" >&#160; </span>
+
+
+ </div>
+
+
+
+
+
     <footer id="footer">
-    <div id="footdiv-left"><a href="#" class="footlink">Advertising</a>
-        <a href="#" class="footlink">Business</a>
-        <a href="#" class="footlink">How Search Works</a></div>
-    <div id="footdiv-right"> <a href="#" class="footlink">Privacy</a>
-    <a href="#" class="footlink">Terms</a>
-    <a href="#" class="footlink">Settings</a> </div>	
+    <div id="footdiv-left">
+        <a href="#" class="footlink">Help</a>
+        <a href="#" class="footlink">Send feedback</a>
+        <a href="#" class="footlink">Privacy</a>
+        <a href="#" class="footlink">Terms</a>
+    </div>
+   
     </footer>
     
-    
-     
-<!-- JS code for luck button . Activates on click -->
-    <script type="text/javascript">
-        var text=[ "kinda lucky" , "very lucky" , "happy" , "ecstatic" , "sad" , "very sad" , "lonely" , "productive" , "very happy" ,"very lucky" ,"generous" ]
-     function myfunc(){ 
-         var lck ;
-         lck= text[Math.round(Math.random()*10)];  
-        document.getElementById("luck-test").innerHTML="I'm Feeling"+ " " + lck }
-        </script>  
-    <!-- end of js code  -->
-
-    
+       
 </body>
     </html>

@@ -1,89 +1,95 @@
-/* 
-Hello Fellow Coder :D
-This is my first project for 'the odin project'
-This replica took me about 2 days to built , this is the second version i completely ditched the first one which was horrible :'(
-But i learbed alot from the process , i looked at other submission for help and it really worked
-this page is not perfect but it's alot better than my older one . Shoutout to my peers because their submissions really helped
-
-I'm marking the sections for details  . You can copy anything from this code.
-I hope this code helps you in any way , happy coding :D
-
-by , Salim Sadman
-*/
-
-/*to keep all elements inside the screen*/
-*{overflow: hidden;}
-/*to adjust the width after adding padding and border , keeps them from overflowing*/
-body{box-sizing: border-box; overflow: hidden; font-size: 1rem; margin: 0; padding: 0; max-width: 100%;}
-a{ text-decoration: none; color: gray;}
-
-
-#navbar{display: block; padding: 5px 10px;}
-.nl{float: left; padding: 1vws;}
-.nr{float: right; padding:1vw 1vw 1vw 1.5vw; }
-.navlink{padding:1vh 1vw; }
-.sign{ background-color: rgb(66, 133, 244); border-radius: 4px; color:white;}
-/*to stop displaying float*/
-#navbar::after{display: block; content: "";}
-
-
-/*middle division styles start*/
-#image  {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5rem;
-    padding: 10px;
+*{margin: 0; padding: 0; -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+font-size: 1rem;
+font-family: 'Open Sans', sans-serif;
 }
-/*adjusting icons inside searchbar*/
+h3{ font-size: 1.5rem; font-family: 'Roboto', sans-serif;}
+a{ text-decoration:none; color: rgba(3,1,255,0.9); font-family: 'Roboto', sans-serif; }
+
+
+
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: inline-block;
+    z-index: 2;
+    float: left;
+    padding:13px 10px 6px 10px;
+    background-color: white;
+}
+#image{max-width:100px; float: left; padding: 10px; margin-right: 30px; margin-left:10px; }
 #search-bar{
-	display: flex;
-	border: 1px solid gray;
-	border-radius: 20px;
-	justify-content: space-between;
-	padding: 13px 20px;
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 20px;
+    justify-content: space-between;
+    padding: 10px;
     box-shadow: 0.5px 0.5px 3px grey;
-    max-width: 500px;
-    margin:15px auto;
+    max-width: 700px;
 }
-.search-icon{ color: azure;}
-/*outline and margin removed to put icons inside the searchbar*/
+.search-icon{ color: dodgerblue; padding: 0 8px;}
+.vr{ border-left: 1px solid black; }
 #input{margin: 0;
 border:0;
 padding:0 10px;
 flex-grow: 2;
-outline: none;
-}
-#luck{ display: block; margin:15px auto; text-align: center;  padding: 20px 0;}
-.lucky1{ padding: 12px;   background-color: #f2f2f2; margin-right: 5px; }
-.lucky2{ padding: 12px;   background-color: #f2f2f2; margin-left: 5px; }
-/*end of middle divion styles*/
+outline: none;}
+.nr{ float: right;  padding: 10px;}
+.navlink{padding:10px; }
+.sign{ background-color: rgb(66, 133, 244); border-radius: 4px; color:white;}
+.dropi{ color: #777;}
+.navi{color: #342;}
 
-/*absolute position to always keep the tab at the end of the  screen*/
+#nav-tab{ margin-left: 12vw; padding:20px 0 10px 0;}
+#nav-tab span{ padding: 10px; max-width: 20px;  }
+#nav-tab span a{ font-size: 15px; color: gray; }
+#nav-tab span i{ font-size: 13px; margin-right: 5px;}
+body>p{ font-size: 13px; padding-left: 13vw; border-top: 1px solid gray; }
+
+main{ margin-left: 13vw; padding:10px 0;  }
+.main-container{
+    width: 52vw;
+    padding: 15px 0;}
+.main-container>a>h3{ padding:6px 0 10px 0;  }    
+
+#simtab{ border:1px solid rgba(36,36,36,0.7) ; border-radius: 10px;  }
+#simtab h3{ border-bottom: 1px solid rgba(36,36,36,0.7) ; padding:5px; }
+#simtab p{ border-bottom: 1px solid rgba(36,36,36,0.7) ; padding:5px; }
+#simtab i{ float: right; padding:5px;}
+
+#vidtab{ display:flex; }
+.vid-conatiner{ position: relative; overflow: hidden; padding :15px; border:2px solid gray; margin-right: 5px; }
+.vid-container iframe{ margin: 0 50px 50px 0; }
+.vid-container p{ color: dodgerblue; font-size: 16px;}
+
+
+#relsearch i{ color: dodgerblue; font-size: 14px; padding: 3px; margin-right: 5px; }
+#relsearch p{ display: inline-block; color: dodgerblue; font-size:16px; padding: 3px; margin: 0; }
+
+#botnav{ margin: auto; padding-left: 33vw; }
+#goologo{ height: 1.5rem; }
+.goog-logo{ font-size: 2rem; font-family: 'Nunito', sans-serif; font-weight: normal; }
+.goog-num{ padding: 0 6px; color: dodgerblue; }
+
+
 #footer{
-	position: absolute;
-	bottom: 0; left: 0; right: 0;
-	max-width: 100vw;
-	padding:10px 5px 20px 5px;
-	background-color:  rgba(240, 240, 240,0.8);
+    position: relative;
+    bottom: 0; left: 0; right: 0;
+    width: 100%;
+    padding:20px 5px 20px 5px;
+    background-color:  rgba(240, 240, 240,0.8);
     display: block;
     border-top: 1px solid snow;
-    margin: auto;
     font-size: 14px;
     overflow: hidden;
 }
 #footdiv-left{float: left;}
-#footdiv-right{float: right;}
-.footlink{padding: 0 0.7vw; }
+.footlink{padding: 0 1vw; }
 
-/*media query for responsive design*/
-@media only screen and (max-width: 450px) {
-	#search-bar{max-width: 275px;}
-    #image{width: 180px;}
-    .footlink{padding: 0 5px; font-size: 11px;}
-    #luck{ max-width:100%;}
-    .lucky2{ padding: 7px; margin-left: 3px;}    
-    .lucky1{ padding: 7px; margin-right:3px; }
+@media only screen and (max-width: 800px;) {
+    #nav-tab{margin-left:3vw; }
+    #nav-tab span{ width:5vw; }
 }
-
-/*don't forget to use devtools to check the responsiveness of your page*/
